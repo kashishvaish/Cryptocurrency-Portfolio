@@ -38,7 +38,8 @@ def app_nav():
   pycrypto.config(menu=menu)
 
 def my_portfolio():
-  api_request = requests.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=300&convert=USD&CMC_PRO_API_KEY=6155675b-4345-4fbc-bfa8-c46c55223f6d")
+  your_api = #enter your CoinMarketCap API here
+  api_request = requests.get(your_api)
 
   api = json.loads(api_request.content)
 
